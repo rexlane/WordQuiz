@@ -1,0 +1,119 @@
+    html {
+      background-color: #d3d3d3;
+      color: #181818;
+      position: relative;
+      min-height: 100%;
+    }
+
+    body {
+      width: 60%;
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #f6f6f6;
+      display: block;
+      height: 100%;
+      min-height: 100%;
+      text-align: left;
+    }
+
+    #header_container {
+      display: block;
+      clear: both;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px 0 10px 0;  
+      font-family: Georgia, serif;
+      font-size: 48pt;
+      font-weight: bold;
+      line-height: 120%;
+      text-align: left;
+      clear: both;
+    }
+
+    #button_container {
+      display: block;
+      width: 100%;
+      padding: 10px 0 30px;
+    }
+
+    a.button {
+      display: block;
+      width: 250px;
+      padding: 10px ;
+      background-color: #4472B9;
+      color: #f6f6f6 ;
+      font-family: Gill Sans, sans-serif;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    a.button:link {
+      text-decoration: none;
+    }
+
+    a.button:hover {
+      background-color: #29446F;
+      text-decoration: underline;
+    }
+
+    .wordBlock  {
+      width: 100%;
+      margin: 25px 0;
+      padding: 20px 0;
+      display: block;
+      clear: both;
+    }
+
+    .wordTitle {
+      font-weight: bold;
+      font-size: 24pt;
+      font-family: Georgia, serif;
+      line-height: 120%;
+      margin-bottom: 12pt;
+    }
+
+    .definition, .example  {
+      font-size: 14pt;
+      font-family: Gill Sans, sans-serif;
+      line-height: 120%;
+      margin-bottom: 6pt;
+    }
+
+    .example {
+      font-style: italic;
+    }
+
+  @media (max-width: 500px) {
+    html {
+      background-color: #f6f6f6;
+    }
+  
+    body {
+      width: 80%;
+      max-width: 80%;
+      margin: 0 auto 60px;
+    }
+
+    h1  {
+      width: 100%;
+    }
+
+    #button-container {
+      width: 100%;
+    }
+
+    .wordBlock  {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    a.button {
+      width: 100%;
+    }
+  }

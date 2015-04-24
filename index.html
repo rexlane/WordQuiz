@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Word Quiz!</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <!-- Javascript libraries -->
+  <script type="text/javascript" src="js/lib/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/handlebars.js"></script>
+  <script type="text/javascript" src="js/lib/tabletop.js"></script>
+  
+  <!-- Templates -->
+  <script id="sections-template" type="text/x-handlebars-template">
+    <div id="main">
+    {{#each body}}
+      {{#each elements}}
+       <div class="wordBlock">
+          <p class="wordTitle">{{ word }} </p>
+          <p class="definition">({{partofspeech}}) {{definition}}</p>
+          {{#if example}}
+            <p class="example">"{{example}}"</p>
+          {{/if}}
+       </div>
+      {{/each}}
+    {{/each}}
+    </div>
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header_container" class="header-footer">
+    <h1>Word Quiz!</h1>
+    <div id="button_container">
+      <p><a href="#" class="button" >Random</a></p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div id="content"> 
+   <script type="text/javascript" src="js/loadpagetabletop_RL.js"></script>
+   <script type="text/javascript" src="js/templates.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+  </div>
+</body>
+</html>
