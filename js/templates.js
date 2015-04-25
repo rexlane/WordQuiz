@@ -1,6 +1,9 @@
+template = Handlebars.compile($("#sections-template").html());
+
+
+
 function loadTemplates() {
-  // 
-  // Put the function that renders a single file card in here
-  // 
-  // 
-};
+	var context_length = context.body[0].elements.length;
+	var random_entry = Math.floor(Math.random() * context_length);
+  	$("#main").html(template(context.body[0].elements[random_entry]));
+}

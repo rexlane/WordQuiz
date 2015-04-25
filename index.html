@@ -14,19 +14,13 @@
   
   <!-- Templates -->
   <script id="sections-template" type="text/x-handlebars-template">
-    <div id="main">
-    {{#each body}}
-      {{#each elements}}
        <div class="wordBlock">
-          <p class="wordTitle">{{ word }} </p>
+          <p class="wordTitle">{{word}} </p>
           <p class="definition">({{partofspeech}}) {{definition}}</p>
           {{#if example}}
             <p class="example">"{{example}}"</p>
           {{/if}}
-       </div>
-      {{/each}}
-    {{/each}}
-    </div>
+       </div>    
   </script>
 </head>
 
@@ -35,7 +29,9 @@
   <div id="header_container" class="header-footer">
     <h1>Word Quiz!</h1>
     <div id="button_container">
-      <p><a href="#" class="button" >Random</a></p>
+      <button class="button" onclick="loadTemplates()" >Random</button>
+    </div>
+    <div id="main">
     </div>
   </div>
 
@@ -43,7 +39,10 @@
   <div id="content"> 
    <script type="text/javascript" src="js/loadpagetabletop_RL.js"></script>
    <script type="text/javascript" src="js/templates.js"></script>
-   <script type="text/javascript" src="js/script.js"></script>
+
+
+
+   <!-- <script type="text/javascript" src="js/script.js"></script> -->
   </div>
 </body>
 </html>

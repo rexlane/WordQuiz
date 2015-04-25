@@ -8,12 +8,8 @@ var context = {
 // First we'll initialize Tabletop with our spreadsheet
 var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
-//  example spreadsheet
-//  initializeTabletopObject('0As3JvOeYDO50dHJITmhNWXRUc3FYMFI4emZhWTU0SlE');
 //  RL's spreadsheet
   initializeTabletopObject('0AsUVhYnfatt3dFkzZms0VUZybUNtRXUyNXFsbktIZEE');
-// initializeTabletopObject('https://docs.google.com/spreadsheets/d/1Lo9bqH5MVCrIsEWaeh_gv3E3zBrq2hRR4pdNeYVEly4/pubhtml');
-
 });
 
 // Pull data from Google spreadsheet
