@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Word Quiz!</title>
+  <meta charset="UTF-8">
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="reset.css" />
@@ -14,35 +15,42 @@
   
   <!-- Templates -->
   <script id="sections-template" type="text/x-handlebars-template">
-       <div class="wordBlock">
-          <p class="wordTitle">{{word}} </p>
-          <p class="definition">({{partofspeech}}) {{definition}}</p>
-          {{#if example}}
-            <p class="example">"{{example}}"</p>
-          {{/if}}
-       </div>    
+    <div class="wordBlock">
+      <p class="wordTitle">{{word}}<span class="partofspeech"> ({{partofspeech}})</span></p>
+      <p class="text-chunk"><span class="label">definition: </span><span class="definition">{{definition}}</span></p>
+      {{#if example}}
+        <p class="text-chunk"><span class="label">example: </span><span class="example">{{example}}</span></p>
+      {{/if}}
+    </div>    
   </script>
+
 </head>
 
 <body>
   <!-- Header -->
-  <div id="header_container" class="header-footer">
-    <h1>Word Quiz!</h1>
-    <div id="button_container">
-      <button class="button" onclick="loadTemplates()" >Random</button>
-    </div>
-    <div id="main">
-    </div>
+  <div id="header-container" class="header-footer">
+    <h1 id="page-title">Word Quiz!</h1>
+    <a href="https://docs.google.com/forms/d/1rBgk-O9bqghxz3eEp04HYkELbDy4R3_CCuV_CHzXj1s/viewform" id="submit-link" target="_blank">Add a word.</a>
   </div>
 
   <!-- Content -->
-  <div id="content"> 
+  <div id="main">
+    <div id="content"></div>
+    <div id="button-container">
+      <button id="random-button" onclick="loadTemplates()">Random</button>
+    </div>
+  </div>
+
+  <!-- Footer   -->
+<!--   <div id="footer-container" class="header-footer">
+    <p id="copyright">&copy; 2015 by Rex Lane</p>
+  </div> -->
+
+  <!-- Content scripts -->
+  <div id="content-scripts"> 
    <script type="text/javascript" src="js/loadpagetabletop_RL.js"></script>
    <script type="text/javascript" src="js/templates.js"></script>
-
-
-
-   <!-- <script type="text/javascript" src="js/script.js"></script> -->
   </div>
 </body>
+
 </html>

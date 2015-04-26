@@ -1,119 +1,171 @@
-    html {
-      /*background-color: #d3d3d3;*/
-      color: #181818;
-      position: relative;
-      min-height: 100%;
-    }
+  html {
+    /*background-color: #d3d3d3;*/
 
-    body {
-      width: 60%;
-      max-width: 650px;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #f6f6f6;
-      display: block;
-      height: 100%;
-      min-height: 100%;
-      text-align: left;
-    }
+  }
 
-    #header_container {
-      display: block;
-      clear: both;
-      margin: 0;
-      padding: 0;
-    }
+  body {
+    background-color: #f6f6f6;
+    color: #2a2a2a;
+    font-family: Gill Sans, sans-serif;
+    font-size: 14pt;
+  }
 
-    h1 {
-      margin: 0;
-      padding: 20px 0 10px 0;  
-      font-family: Georgia, serif;
-      font-size: 48pt;
-      font-weight: bold;
-      line-height: 120%;
-      text-align: left;
-      clear: both;
-    }
 
-    #button_container {
-      display: block;
-      width: 100%;
-      padding: 10px 0 30px;
-    }
 
-    a.button {
-      display: block;
-      width: 250px;
-      padding: 10px ;
-      background-color: #4472B9;
-      color: #f6f6f6 ;
-      font-family: Gill Sans, sans-serif;
-      font-size: 18px;
-      text-align: center;
-    }
+/*Header styles*/
 
-    a.button:link {
-      text-decoration: none;
-    }
+  #header-container {
+    /*width: 100%;*/
+    padding: 15px 75px 10px;
+    margin-bottom: 50px;
+    background-color: #3f3f3f;
+    color: #f6f6f6;
+    overflow: hidden;
 
-    a.button:hover {
-      background-color: #29446F;
-      text-decoration: underline;
-    }
+  }
 
-    .wordBlock  {
-      width: 100%;
-      margin: 25px 0;
-      padding: 20px 0;
-      display: block;
-      clear: both;
-    }
+  #page-title {
+    float: left;
+    font-family: Georgia, serif;
+    font-size: 18pt;
+    font-style: italic;
+  } 
 
-    .wordTitle {
-      font-weight: bold;
-      font-size: 24pt;
-      font-family: Georgia, serif;
-      line-height: 120%;
-      margin-bottom: 12pt;
-    }
+  #submit-link {
+    float: right;
+    font-family: Gill Sans, sans-serif;
+    font-size: 12pt;
+    padding-top: 3pt;
+  }
 
-    .definition, .example  {
-      font-size: 14pt;
-      font-family: Gill Sans, sans-serif;
-      line-height: 120%;
-      margin-bottom: 6pt;
-    }
+  a {
+    color: #f6f6f6;
+    text-decoration: none;
+  }
 
-    .example {
-      font-style: italic;
-    }
+
+  a:hover {
+    color: #4472B9;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+/*Body styles*/
+
+  #main {
+    /*width: 100%;*/
+  }
+
+  #content {
+    width: 60%;
+    max-width: 500px;
+    min-height: 250px;
+    margin: 0 auto;
+  }
+
+/*  #button-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }*/
+   
+  .wordBlock  {
+    text-align: center;
+    font-size: 14pt;
+    font-family: Gill Sans, sans-serif;
+  }
+
+
+  .wordTitle {
+    font-weight: bold;
+    font-size: 24pt;
+    font-family: Georgia, serif;
+    margin: 20px 0;
+  }
+
+  .partofspeech {
+    font-family: Gill Sans, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .text-chunk  {
+    margin-bottom: 20pt;
+    line-height: 150%;
+  }
+
+  .label {
+    font-weight: bold;
+    /*margin-bottom: 6pt;*/
+  }
+
+  .example {
+    font-style: italic;
+  }
+
+  button {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    background-color: #4472B9;
+    color: #f6f6f6 ;
+    font-family: Gill Sans, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin: 0 auto;
+  }
+
+  button:hover {
+    background-color: #29446F;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+  #footer-container {
+   padding: 25px 75px;
+  }
+
+  #copyright {
+    float: right;
+    font-size: 12pt;
+  }
+
 
   @media (max-width: 500px) {
-    html {
-      background-color: #f6f6f6;
-    }
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+}  
+
+#header-container {
+    /*width: 100%;*/
+    padding: 15px 0 5px 0;
+  }
+
+  #page-title, #submit-link {
+/*    float: none;*/
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #submit-link {
+    padding: 6pt 0;
+  }
+
+  #content {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+  }
+
   
-    body {
-      width: 80%;
-      max-width: 80%;
-      margin: 0 auto 60px;
-    }
-
-    h1  {
-      width: 100%;
-    }
-
-    #button-container {
-      width: 100%;
-    }
-
-    .wordBlock  {
-      width: 100%;
-      margin: 0;
-      padding: 10px 0;
-    }
-
-    a.button {
-      width: 100%;
-    }
+  button {
+    width: 100%;
+  }
   }
