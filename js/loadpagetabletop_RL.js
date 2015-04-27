@@ -10,6 +10,7 @@ var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
 //  RL's spreadsheet
   initializeTabletopObject('0AsUVhYnfatt3dFkzZms0VUZybUNtRXUyNXFsbktIZEE');
+
 });
 
 // Pull data from Google spreadsheet
