@@ -1,6 +1,6 @@
+/*General*/
   html {
     /*background-color: #d3d3d3;*/
-
   }
 
   body {
@@ -10,14 +10,15 @@
     font-size: 14pt;
   }
 
+  .hidden {
+    display: none;
+  }
 
-
-/*Header styles*/
-
+/*Header*/
   #header-container {
     /*width: 100%;*/
     padding: 15px 75px 10px;
-    margin-bottom: 50px;
+    /*margin-bottom: 100px;*/
     background-color: #3f3f3f;
     color: #f6f6f6;
     overflow: hidden;
@@ -50,7 +51,49 @@
     cursor: pointer;
   }
 
-/*Body styles*/
+
+/*  #button-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }*/
+   
+
+/*Buttons*/
+  #nav-list {
+    width: 60%;
+    max-width: 500px;
+    margin: 20px auto 50px;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 3%;
+    background-color: #7c9cce;
+    color: #f6f6f6;
+    width: 20%;
+    /*max-width: 100px;*/
+    /*min-width: 20px;*/
+  }
+
+  .nav-item {
+    font-size: 12pt;
+    text-align: center;
+  }
+
+
+  li:hover {
+    background-color: #29446F;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+
+/*Word block*/
 
   #main {
     /*width: 100%;*/
@@ -59,28 +102,21 @@
   #content {
     width: 60%;
     max-width: 500px;
-    min-height: 250px;
+    /*min-height: 250px;*/
     margin: 0 auto;
   }
 
-/*  #button-container {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-  }*/
-   
   .wordBlock  {
     text-align: center;
     font-size: 14pt;
     font-family: Gill Sans, sans-serif;
   }
 
-
   .wordTitle {
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 42pt;
     font-family: Georgia, serif;
-    margin: 20px 0;
+    margin: 100px 0 70px;
   }
 
   .partofspeech {
@@ -100,10 +136,10 @@
   }
 
   .example {
-    font-style: italic;
+    /*font-style: italic;*/
   }
 
-  button {
+/*  button {
     display: block;
     width: 250px;
     padding: 10px;
@@ -122,7 +158,12 @@
     cursor: pointer;
   }
 
+  button:focus {
+    outline: 0;
+  }*/
 
+
+/*
   #footer-container {
    padding: 25px 75px;
   }
@@ -132,15 +173,15 @@
     font-size: 12pt;
   }
 
+*/
+@media (max-width: 500px) {
 
-  @media (max-width: 500px) {
+  #main {
+    width: 80%;
+    margin: 0 auto;
+  }  
 
-#main {
-  width: 80%;
-  margin: 0 auto;
-}  
-
-#header-container {
+  #header-container {
     /*width: 100%;*/
     padding: 15px 0 5px 0;
   }
@@ -164,8 +205,20 @@
     margin: 0 auto;
   }
 
-  
-  button {
+  #nav-list {
     width: 100%;
   }
+
+  li {
+    width: 100%;
+    margin: 5px 0;
+  }  
+
+  .nav-item {
+    font-size: 14pt;
   }
+
+/*  button {
+    width: 100%;
+  }*/
+}

@@ -16,11 +16,11 @@
   <!-- Templates -->
   <script id="sections-template" type="text/x-handlebars-template">
     <div class="wordBlock">
-      <p class="wordTitle">{{word}}<span class="partofspeech"> ({{partofspeech}})</span></p>
-      <p class="text-chunk"><span class="label">definition: </span><span class="definition">{{definition}}</span></p>
+      <p class="wordTitle">{{word}}</p>
       {{#if example}}
-        <p class="text-chunk"><span class="label">example: </span><span class="example">{{example}}</span></p>
+        <p class="text-chunk hidden" id="example-chunk"><span class="label">example: </span><span class="example">{{example}}</span></p>
       {{/if}}
+      <p class="text-chunk hidden" id="def-chunk"><span class="label">definition: </span>(<span class="partofspeech">{{partofspeech}}</span>)<span class="definition"> {{definition}}</span></p>
     </div>    
   </script>
 
@@ -35,10 +35,19 @@
 
   <!-- Content -->
   <div id="main">
+
+      <ul id="nav-list">
+        <li><p class="nav-item" onclick="showExample()">Example</p></li>
+        <li><p class="nav-item" onclick="showDef()">Definition</p></li>
+        <li><p class="nav-item" onclick="loadTemplates()">New</p></li>
+      </ul>
+
+
+
     <div id="content"></div>
-    <div id="button-container">
-      <button id="random-button" onclick="loadTemplates()">Random</button>
-    </div>
+<!--     <div id="button-container">
+      <button id="random-button" onclick="loadTemplates()">New Word</button>
+    </div> -->
   </div>
 
   <!-- Footer   -->
