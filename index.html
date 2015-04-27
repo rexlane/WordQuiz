@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Word Quiz!</title>
+  <meta charset="UTF-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <!-- Javascript libraries -->
+  <script type="text/javascript" src="js/lib/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/handlebars.js"></script>
+  <script type="text/javascript" src="js/lib/tabletop.js"></script>
+  
+  <!-- Templates -->
+  <script id="sections-template" type="text/x-handlebars-template">
+    <div class="wordBlock">
+      <p class="wordTitle">{{word}}</p>
+      {{#if example}}
+        <p class="text-chunk hidden" id="example-chunk"><span class="label">example: </span><span class="example">{{example}}</span></p>
+      {{/if}}
+      <p class="text-chunk hidden" id="def-chunk"><span class="label">definition: </span>(<span class="partofspeech">{{partofspeech}}</span>)<span class="definition"> {{definition}}</span></p>
+    </div>    
+  </script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header-container" class="header-footer">
+    <h1 id="page-title">Word Quiz!</h1>
+    <a href="https://docs.google.com/forms/d/1rBgk-O9bqghxz3eEp04HYkELbDy4R3_CCuV_CHzXj1s/viewform" id="submit-link" target="_blank;">Add a word.</a>
+  </div>
+
+  <!-- Content -->
+  <div id="main">
+
+      <ul id="nav-list">
+        <li><p class="nav-item" onclick="showExample()">Example</p></li>
+        <li><p class="nav-item" onclick="showDef()">Definition</p></li>
+        <li><p class="nav-item" onclick="loadTemplates()">New</p></li>
+      </ul>
+
+
+
+    <div id="content"></div>
+<!--     <div id="button-container">
+      <button id="random-button" onclick="loadTemplates()">New Word</button>
+    </div> -->
+  </div>
+
+  <!-- Footer   -->
+<!--   <div id="footer-container" class="header-footer">
+    <p id="copyright">&copy; 2015 by Rex Lane</p>
+  </div> -->
+
+  <!-- Content scripts -->
+  <div id="content-scripts"> 
+   <script type="text/javascript" src="js/loadpagetabletop_RL.js"></script>
+   <script type="text/javascript" src="js/templates.js"></script>
+  </div>
+</body>
+
+</html>
