@@ -9,7 +9,7 @@ var context = {
 var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
 //  RL's spreadsheet
-  initializeTabletopObject('https://docs.google.com/spreadsheets/d/1ZgC8FlfyqXXJUYJB4B0fWvPxOGQoMTOnoC2bXnTdhao/pubhtml?');
+  initializeTabletopObject('1ZgC8FlfyqXXJUYJB4B0fWvPxOGQoMTOnoC2bXnTdhao');
 // https://docs.google.com/spreadsheets/d/1ZgC8FlfyqXXJUYJB4B0fWvPxOGQoMTOnoC2bXnTdhao/pubhtml?
 });
 
