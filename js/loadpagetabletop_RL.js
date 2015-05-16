@@ -19,7 +19,7 @@ function initializeTabletopObject(dataSpreadsheet){
   Tabletop.init({
     key: dataSpreadsheet,
     callback: pullDataFromTabletop,
-    debug: true
+    debug: false
   });
 }
 
