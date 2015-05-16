@@ -9,8 +9,8 @@ var context = {
 var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
 //  RL's spreadsheet
-  initializeTabletopObject('0AsUVhYnfatt3dFkzZms0VUZybUNtRXUyNXFsbktIZEE');
-
+  initializeTabletopObject('https://docs.google.com/spreadsheets/d/1ZgC8FlfyqXXJUYJB4B0fWvPxOGQoMTOnoC2bXnTdhao/pubhtml?');
+// https://docs.google.com/spreadsheets/d/1ZgC8FlfyqXXJUYJB4B0fWvPxOGQoMTOnoC2bXnTdhao/pubhtml?
 });
 
 // Pull data from Google spreadsheet
